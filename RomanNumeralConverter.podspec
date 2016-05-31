@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RomanNumeralConverter'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Convert a number to its Roman numeral representation.'
 
 # This description is used to generate tags and improve search results.
@@ -27,9 +27,9 @@ Pass in a number between 1 and 5000 to have it converted to its Roman numeral re
   s.author           = { 'Donny Davis' => 'donnywdavis@icloud.com' }
   s.source           = { :git => 'https://github.com/donnywdavis/RomanNumeralConverter.git', :tag => 'v' + s.version.to_s }
   # s.social_media_url = 'https://twitter.com/donnywdavis'
-  s.platform         = :ios, '8.0'
-  s.platform         = :osx, '10.10'
-  s.platform         = :watchos, '2.0'
+
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
 
   s.source_files = 'RomanNumeralConverter/Classes/**/*'
 
