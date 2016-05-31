@@ -1,29 +1,17 @@
-import UIKit
 import XCTest
 import RomanNumeralConverter
 
 class Tests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testConvertNumber() {
+        let number1 = RomanNumeralConverter.convertNumber(1)
+        XCTAssert(number1 == "I", "Number 1 does not equal I")
+        
+        let number10 = RomanNumeralConverter.convertNumber(10)
+        XCTAssert(number10 == "X", "Number 10 does not equal X")
+        
+        let number73 = RomanNumeralConverter.convertNumber(73)
+        XCTAssert(number73 == "LXXIII", "Number 73 does not equal LXXIII")
     }
     
 }
