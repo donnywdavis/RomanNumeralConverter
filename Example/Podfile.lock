@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RomanNumeralConverter: 38faf30e16b977ed67411ae8af1d7f6f8ddc5e66
+  RomanNumeralConverter: 7e5e110975280e5ad45408ab68c1574f966d9487
 
 PODFILE CHECKSUM: 454d29a796ef9eea1741029d4d5af3339351701d
 
