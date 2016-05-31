@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import RomanNumeralConverter
 
 class ViewController: UIViewController {
+    
+    // MARK: IBOutlets
+    
+    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var valueLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +24,17 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: Button Actions
+    
+    @IBAction func convertAction(sender: UIButton) {
+        guard let number = numberTextField?.text where number != "" else {
+            return
+        }
+        
+        valueLabel.text = RomanNumeralConverter.convertNumber(Int(number)!)
+        
     }
 
 }
