@@ -25,7 +25,7 @@ Pass in a number between 1 and 5000 to have it converted to its Roman numeral re
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Donny Davis' => 'donnywdavis@icloud.com' }
-  s.source           = { :git => 'https://github.com/donnywdavis/RomanNumeralConverter.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/donnywdavis/RomanNumeralConverter.git', :tag => 'v' + s.version.to_s }
   # s.social_media_url = 'https://twitter.com/donnywdavis'
 
   s.ios.deployment_target = '8.0'
